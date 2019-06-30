@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: echo-config-map
+  namespace: default
+  labels:
+    owner: echo
+data:
+  MIX_ENV: "prod"
