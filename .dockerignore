@@ -1,0 +1,15 @@
+/_build/
+/cover/
+/deps/
+/doc/
+/guides/
+/.fetch
+/.git
+erl_crash.dump
+*.ez
+*.env
+docker-compose.yml
+*.sample
+README.md
+.gitignore
+Dockerfile
