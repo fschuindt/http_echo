@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
  name: echo-deployment
@@ -8,6 +8,9 @@ metadata:
     app: echo
     tier: web
 spec:
+  selector:
+    matchLabels:
+      app: echo
   revisionHistoryLimit: 5
   replicas: 1
   strategy:
